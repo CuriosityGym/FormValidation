@@ -3,7 +3,7 @@
 function completePayment()
 {
  var options = {
-    "key": "rzp_test_WGzU46Mxz4bbRd",
+    "key": "rzp_test_oJXuyp0VIc25Pu",
     "amount": "1250000", // 2000 paise = INR 20
     "name": "CuriosityGym",
     "description": "Registration for Innovation Hub",	
@@ -25,7 +25,7 @@ function completePayment()
 	
 	if(validateFields(fieldIDs))
 	{
-		jQuery(".error_message_payment").hide();
+		jQuery(".error_message_payment_container").hide();
 		updatedOptions=constructNotes(fieldIDs, options)
 		console.log(updatedOptions);
 		//constructNotes(fieldIDs)
@@ -34,7 +34,7 @@ function completePayment()
 	}
 	else
 	{
-		jQuery(".error_message_payment").show();
+		jQuery(".error_message_payment_container").show();
 	}
   //var rzp1 = new Razorpay(options);
   //rzp1.open();
